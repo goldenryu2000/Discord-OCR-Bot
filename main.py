@@ -14,7 +14,7 @@ def get_string(img_path):
     img = cv2.erode(img, kernel, iterations=1)
     cv2.imwrite("removed_noise.png", img)
     cv2.imwrite(img_path, img)
-    result = pytesseract.image_to_string(Image.open(img_path),config='-l eng + equ')
+    result = pytesseract.image_to_string(Image.open(img_path))
     return result
 
 
