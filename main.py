@@ -23,7 +23,7 @@ bot = commands.Bot(command_prefix='.', description="This is an OCR-Butt")
 @bot.event
 async def on_ready():
     await bot.change_presence(activity=discord.Streaming(name="Butts", url="abcd"))
-    print("Lessa GO!! It's Butt Time!!!!")
+    print("Lessa GO!! It's Butt Time!!!!") # Change this to whatever you Like.
 
 @bot.event
 async def on_message(message):
