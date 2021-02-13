@@ -1,7 +1,7 @@
 # OCR - Bot
 A Simple Discord Bot for OCR.
 
-As a personal preference, This bot requires no command to do OCR. So add it to a separate channel or make sure you don't add this bot on the channels where you don't want it.
+As a personal preference, this bot requires no command to do OCR. So add it to a separate channel or make sure you don't add this bot on the channels where you don't want it.
 
 
 # Instructions:
