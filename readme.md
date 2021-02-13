@@ -1,7 +1,7 @@
 # OCR - Bot
 A Simple Discord Bot for OCR.
 
-## NOTE: This bot works with a Local Host for now.
+### NOTE: This bot works with a Local Host for now.
 
 # Instructions:
  - Clone the repo
