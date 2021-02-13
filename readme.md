@@ -21,7 +21,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
       ```
     - On Windows, download installer from [here](https://github.com/UB-Mannheim/tesseract/wiki)
  
-- ### Don't forget to add your "BOT_TOKEN" in the "main.py" file.
+- ### Don't forget to add your "BOT_TOKEN" in the "bot.py" file.
 
 - Run the python bot using the command: 
     ```sh
