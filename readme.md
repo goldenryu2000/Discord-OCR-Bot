@@ -25,10 +25,10 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 
 - Run the python bot using the command: 
     ```sh
-    python main.py
+    python bot.py
    ```
     or
     ```sh
-    python3 main.py
+    python3 bot.py
     ```
  
