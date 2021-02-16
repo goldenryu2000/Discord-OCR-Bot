@@ -1,5 +1,7 @@
 # OCR - Bot
-A Simple Discord Bot for OCR.
+A Simple Discord Bot for OCR. Deployable on Heroku.
+
+Check out my implementation of this [OCR-BOT](https://discord.com/api/oauth2/authorize?client_id=805507110363201547&permissions=2048&scope=bot)
 
 As a personal preference, this bot requires no command to do OCR. So add it to a separate channel and make sure other channels are not visible to it.
 
@@ -10,6 +12,8 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
      ```sh
     pip install -r requirements.txt
     ```
+- These requirements include "opencv-headless", if you are trying it on a machine which doesn't support it, install the [normal OpenCV](https://pypi.org/project/opencv-python/) library.
+
 - Install tesserct-ocr using this command:
     - On Ubuntu
       ```

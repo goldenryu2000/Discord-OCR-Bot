@@ -1,18 +1,27 @@
 import discord
 from discord.ext import commands
 import pytesseract
+import cv2
+import numpy as np
 from PIL import Image
 from PIL import ImageFilter
 from io import BytesIO
 import requests
 
+
 def process_image(url):
-    image = _get_image(url)
-    image.filter(ImageFilter.SHARPEN)
-    return pytesseract.image_to_string(image)
+    img = _get_image(url)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    filter = np.array([[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]])
+    img=cv2.filter2D(img,-1,filter)
+    kernel = np.ones((1, 1), np.uint8)
+    img = cv2.dilate(img, kernel, iterations=1)
+    img = cv2.erode(img, kernel, iterations=1)
+    pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
+    return pytesseract.image_to_string(img)
 
 def _get_image(url):
-    return Image.open(BytesIO(requests.get(url).content))
+    return np.asarray(Image.open(BytesIO(requests.get(url).content)))
 
 bot = commands.Bot(command_prefix='.', description="This is an OCR-Butt")
 # Events
@@ -36,5 +45,5 @@ async def on_message(message):
         pass
     await bot.process_commands(message)
     
-  #Add your BOT TOKEN here:   
+# Enter your BOT_TOKEN Here
 bot.run('BOT_TOKEN')
