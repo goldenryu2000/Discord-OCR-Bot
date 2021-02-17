@@ -119,17 +119,17 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 
     - Then you can proceed with the commands : 
 
-             ```sh
-            git add .
-             ```
+    ```sh
+    git add .
+    ```
 
-             ```sh
-            git commit -am "make it better"
-             ```
+    ```sh
+    git commit -am "make it better"
+    ```
 
-             ```sh
-            git push heroku master
-            ```
+    ```sh
+    git push heroku master
+    ```
             
     ![image](assets/start-dep.png)
 
