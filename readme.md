@@ -85,7 +85,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 
 - Follow the Steps given in "Deploy" section of your Heroku app. <br />
 
-- ### But,  First we have to change the Heroku stack to "heroku-18"
+- ## But,  First we have to change the Heroku stack to "heroku-18"
 
     - Changing it to "heroku-18" made it work for me.
 
