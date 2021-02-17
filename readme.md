@@ -1,7 +1,7 @@
 # OCR - Bot
 A Simple Discord Bot for OCR which is enabled by [pytesseract](https://pypi.org/project/pytesseract/) library. Deployable on Heroku (steps to deploy below).
 
-### If you just want to add an OCR bot on your server , use this  [OCR-BOT](https://discord.com/api/oauth2/authorize?client_id=805507110363201547&permissions=2048&scope=bot).
+### If you just want to add an OCR bot on your server , use this [OCR-Bot for Discord](https://discord.com/api/oauth2/authorize?client_id=805507110363201547&permissions=2048&scope=bot).
 
 As a personal preference, this bot requires no command to do OCR. So add it to a separate channel and make sure other channels are not visible to it.
 
