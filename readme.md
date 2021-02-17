@@ -38,23 +38,23 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
  
 # Deploying on Heroku (as on Feb-2021)
 - Create an account on [Heroku](https://www.heroku.com/)
-- Click on "New" -> "Create new App"\
+- Click on "New" -> "Create new App" <br />
 
 ![image](assets/new-app.png)
 
-- When you click on "Create App", you'll be greeted with this section :\
+- When you click on "Create App", you'll be greeted with this section : <br />
 ![image](assets/first-deploy.png)
-- Jump to "Settings" where you'll scroll down to see "Config Vars" & "Buildpacks":\
+- Jump to "Settings" where you'll scroll down to see "Config Vars" & "Buildpacks": <br />
 ![image](assets/buildpack.png)
 - Add "Python Buildpack" and the below mentioned buildpack : 
      ```sh
     https://github.com/heroku/heroku-buildpack-apt
     ```
     <br />
-    ![image](assets/python-bp.png)\
-    ![image](assets/custom-bp.png)\
-    ![image](asstes/final-bp.png)\
-- After adding both buildpacks, click on "Reveal Config Vars" :\
+    ![image](assets/python-bp.png) <br />
+    ![image](assets/custom-bp.png) <br />
+    ![image](asstes/final-bp.png) <br />
+- After adding both buildpacks, click on "Reveal Config Vars" : <br />
     ![image](assets/config-vars.png)
 - Add the below mentioned "Key = Value" Pair : 
      ```sh
@@ -63,7 +63,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     <br />
     ![image](assets/fin-config-vars.png)
 - After adding both Buildpacks and Config variables,  we're now ready to deploy.
-- Follow the Steps given in "Deploy" section of your Heroku app.\
+- Follow the Steps given in "Deploy" section of your Heroku app. <br />
 - ### But,  First we have to change the Heroku stack to "heroku-18"
     - Changing it to "heroku-18" made it work for me.
     - Type in the first three commands in your bot directory (assuming you have [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed) : 
