@@ -59,11 +59,11 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     ```
     <br />
 
-    <img src="assets/python-bp.png" alt="Your image title" width="70%" height="70%"/>
+    <img src="assets/python-bp.png" alt="Your image title" width="80%" height="50%"/>
 
-    <img src="assets/custom-bp.png" alt="Your image title" width="70%" height="70%"/>
+    <img src="assets/custom-bp.png" alt="Your image title" width="80%" height="50%"/>
 
-    <img src="assets/final-bp.png" alt="Your image title" width="70%" height="70%"/>
+    <img src="assets/final-bp.png" alt="Your image title" width="80%" height="50%"/>
 
     <br />
 
