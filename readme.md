@@ -40,8 +40,11 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 
 # Deploying on Heroku (as on Feb-2021)
 - Uncomment the line as shown below before deploying to Heroku:
+
 <img src="assets/uncomment.png" alt="" width="90%" height="70%"/>
-- Create an account on [Heroku](https://www.heroku.com/)
+
+- Create an account on [Heroku](https://www.heroku.com/) <br />
+
 - Click on "New" -> "Create new App" <br />
 
 <img src="assets/new-app.png" alt="" width="90%" height="70%"/>
