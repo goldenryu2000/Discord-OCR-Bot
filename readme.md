@@ -2,7 +2,7 @@
 A Simple Discord Bot for OCR which is enabled by [pytesseract](https://pypi.org/project/pytesseract/) library. Deployable on Heroku (steps to deploy below).
 
 If you just want to add an OCR bot on your server , use this  [OCR-BOT](https://discord.com/api/oauth2/authorize?client_id=805507110363201547&permissions=2048&scope=bot).
-c
+
 As a personal preference, this bot requires no command to do OCR. So add it to a separate channel and make sure other channels are not visible to it.
 
 
@@ -38,30 +38,32 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
  
 # Deploying on Heroku (as on Feb-2021)
 - Create an account on [Heroku](https://www.heroku.com/)
-- Click on "New" -> "Create new App"
-<<<<<<< HEAD
+- Click on "New" -> "Create new App" \
+
 ![image](assets/new-app.png)
 
-- When you click on "Create App", you'll be greeted with this section : 
+- When you click on "Create App", you'll be greeted with this section : \
 ![image](assets/first-deploy.png)
-- Jump to "Settings" where you'll scroll down to see "Config Vars" & "Buildpacks":
+- Jump to "Settings" where you'll scroll down to see "Config Vars" & "Buildpacks": \
 ![image](assets/buildpack.png)
 - Add "Python Buildpack" and the below mentioned buildpack : 
      ```sh
     https://github.com/heroku/heroku-buildpack-apt
     ```
-    ![image](assets/python-bp.png)
-    ![image](assets/custom-bp.png)
-    ![image](asstes/final-bp.png)
-- After adding both buildpacks, click on "Reveal Config Vars" :
+    <br />
+    ![image](assets/python-bp.png) \
+    ![image](assets/custom-bp.png) \
+    ![image](asstes/final-bp.png) \
+- After adding both buildpacks, click on "Reveal Config Vars" : \
     ![image](assets/config-vars.png)
 - Add the below mentioned "Key = Value" Pair : 
      ```sh
     TESSDATA_PREFIX = ./.apt/usr/share/tesseract-ocr/4.00/tessdata
     ```
+    <br />
     ![image](assets/fin-config-vars.png)
 - After adding both Buildpacks and Config variables,  we're now ready to deploy.
-- Follow the Steps given in "Deploy" section of your Heroku app.
+- Follow the Steps given in "Deploy" section of your Heroku app. \
 - ### But,  First we have to change the Heroku stack to "heroku-18"
     - Changing it to "heroku-18" made it work for me.
     - Type in the first three commands in your bot directory (assuming you have [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed) : 
