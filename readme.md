@@ -39,18 +39,20 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
  <br />
 
 # Deploying on Heroku (as on Feb-2021)
+- Uncomment the line as shown below before deploying to Heroku:
+<img src="assets/uncomment.png" alt="" width="90%" height="70%"/>
 - Create an account on [Heroku](https://www.heroku.com/)
 - Click on "New" -> "Create new App" <br />
 
-<img src="assets/new-app.png" alt="Your image title" width="90%" height="70%"/>
+<img src="assets/new-app.png" alt="" width="90%" height="70%"/>
 
 - When you click on "Create App", you'll be greeted with this section : <br />
 
-<img src="assets/first-deploy.png" alt="Your image title" width="90%" height="70%"/>
+<img src="assets/first-deploy.png" alt="" width="90%" height="70%"/>
 
 - Jump to "Settings" where you'll scroll down to see "Config Vars" & "Buildpacks": <br />
 
-<img src="assets/buildpack.png" alt="Your image title" width="90%" height="70%"/>
+<img src="assets/buildpack.png" alt="" width="90%" height="70%"/>
 
 - Add "Python Buildpack" and the below mentioned buildpack : 
 
@@ -59,17 +61,17 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     ```
     <br />
 
-    <img src="assets/python-bp.png" alt="Your image title" width="70%" height="55%"/>
+    <img src="assets/python-bp.png" alt="" width="70%" height="55%"/>
 
-    <img src="assets/custom-bp.png" alt="Your image title" width="70%" height="55%"/>
+    <img src="assets/custom-bp.png" alt="" width="70%" height="55%"/>
 
-    <img src="assets/final-bp.png" alt="Your image title" width="70%" height="55%"/>
+    <img src="assets/final-bp.png" alt="" width="70%" height="55%"/>
 
     <br />
 
 - After adding both buildpacks, click on "Reveal Config Vars" : <br />
 
-    <img src="assets/config-vars.png" alt="Your image title" width="90%" height="90%"/>
+    <img src="assets/config-vars.png" alt="" width="90%" height="90%"/>
 
 - Add the below mentioned "Key = Value" Pair :
 
@@ -78,7 +80,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     ```
     <br />
 
-    <img src="assets/fin-config-vars.png" alt="Your image title" width="90%" height="90%"/>
+    <img src="assets/fin-config-vars.png" alt="" width="90%" height="90%"/>
 
 
 - After adding both Buildpacks and Config variables,  we're now ready to deploy.
@@ -104,7 +106,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     ```
 
 
-    <img src="assets/first-two-cmd.png" alt="Your image title" width="70%" height="70%"/> 
+    <img src="assets/first-two-cmd.png" alt="" width="70%" height="70%"/> 
 
      <br /> 
 
@@ -114,7 +116,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
          heroku stack:set heroku-18
         ```
 
-    <img src="assets/stack-18.png" alt="Your image title" width="70%" height="70%"/>
+    <img src="assets/stack-18.png" alt="" width="70%" height="70%"/>
         <br />
 
     - Then you can proceed with the commands : 
@@ -133,7 +135,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 
     <br />
 
-    <img src="assets/done-dep.png" alt="Your image title" width="70%" height="70%"/>
+    <img src="assets/done-dep.png" alt="" width="70%" height="70%"/>
     
 - It'll take time to push the bot to heroku. Be patient.
 
@@ -141,7 +143,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 
     - Click on the edit icon and turn the bot ON.
 
-    <img src="assets/bot-on.png" alt="Your image title" width="90%" height="90%"/>
+    <img src="assets/bot-on.png" alt="" width="90%" height="90%"/>
 
 
 ### That's it, your bot is now live. (If you didn't forget to add your "BOT_TOKEN" in the bot.py file.)

@@ -4,8 +4,6 @@ import pytesseract
 import cv2
 import numpy as np
 from PIL import Image
-from PIL import ImageFilter
-from io import BytesIO
 import requests
 
 
@@ -17,7 +15,10 @@ def get_string(img_path):
     img = cv2.erode(img, kernel, iterations=1)
     cv2.imwrite("removed_noise.png", img)
     cv2.imwrite(img_path, img)
-    pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
+
+    # Uncomment the BELOW LINE when deploying on HEROKU
+    # pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"   
+    
     result = pytesseract.image_to_string(Image.open(img_path))
     return result
     
@@ -48,5 +49,5 @@ async def on_message(message):
         pass
     await bot.process_commands(message)
     
-#insert yout BOT TOKEN here
+# Addyout BOT TOKEN here
 bot.run('BOT_TOKEN')
