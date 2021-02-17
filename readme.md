@@ -41,8 +41,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 - Click on "New" -> "Create new App"
 <<<<<<< HEAD
 ![image](assets/new-app.png)
-=======
->>>>>>> c755d6cc9eba3e3c974b1b9caf2ae20e9c75a01c
+
 - When you click on "Create App", you'll be greeted with this section : 
 ![image](assets/first-deploy.png)
 - Jump to "Settings" where you'll scroll down to see "Config Vars" & "Buildpacks":
@@ -55,7 +54,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     ![image](assets/custom-bp.png)
     ![image](asstes/final-bp.png)
 - After adding both buildpacks, click on "Reveal Config Vars" :
-    ![image]('assets/config-vars.png')
+    ![image](assets/config-vars.png)
 - Add the below mentioned "Key = Value" Pair : 
      ```sh
     TESSDATA_PREFIX = ./.apt/usr/share/tesseract-ocr/4.00/tessdata
@@ -98,7 +97,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 - It'll take time to push the bot to heroku. Be patient.
 - After the build has succeeded, you can go and start your bot by going into "resources" tab and turning the "bot.py" worker ON.
     - Click on the edit icon and turn the bot ON.
-    ![image]('assets/bot-on.png')
+    ![image](assets/bot-on.png)
 
 - That's it, your bot is now live. (If you didn't forget to add your "BOT_TOKEN" in the bot.py file.)
     
