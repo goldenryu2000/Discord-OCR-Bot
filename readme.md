@@ -46,11 +46,11 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 
 - When you click on "Create App", you'll be greeted with this section : <br />
 
-<img src="assets/first-deploy.png" alt="Your image title" width="70%" height="70%"/>
+<img src="assets/first-deploy.png" alt="Your image title" width="90%" height="70%"/>
 
 - Jump to "Settings" where you'll scroll down to see "Config Vars" & "Buildpacks": <br />
 
-<img src="assets/buildpack.png" alt="Your image title" width="70%" height="70%"/>
+<img src="assets/buildpack.png" alt="Your image title" width="90%" height="70%"/>
 
 - Add "Python Buildpack" and the below mentioned buildpack : 
 
