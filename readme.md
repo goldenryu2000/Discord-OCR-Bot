@@ -94,10 +94,12 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     ```sh
     heroku login
     ```
-    
+    <br /> 
+
     ```sh
     git init
     ```
+    <br /> 
 
     ```sh
     heroku git:remote -a "Your-app-name"
