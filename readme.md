@@ -52,7 +52,9 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     ```
     <br />
     ![image](assets/python-bp.png)
+
     ![image](assets/custom-bp.png) 
+
     ![image](asstes/final-bp.png)
     <br />
 - After adding both buildpacks, click on "Reveal Config Vars" : <br />
@@ -69,15 +71,15 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     - Changing it to "heroku-18" made it work for me.
     - Type in the first three commands in your bot directory (assuming you have [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed) : 
     <br />
-           ```
+           ```sh
             heroku login
              ```
              <br />
-             ```
+             ```sh
             git init
              ```
              <br />
-             ```
+             ```sh
             heroku git:remote -a "Your-app-name"
              ```
              <br />
