@@ -143,7 +143,8 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 
     <img src="assets/bot-on.png" alt="Your image title" width="90%" height="90%"/>
 
-- That's it, your bot is now live. (If you didn't forget to add your "BOT_TOKEN" in the bot.py file.)
+
+### That's it, your bot is now live. (If you didn't forget to add your "BOT_TOKEN" in the bot.py file.)
     
 
 
