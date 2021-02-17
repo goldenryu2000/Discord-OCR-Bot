@@ -130,8 +130,6 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     ```sh
     git push heroku master
     ```
-            
-    <img src="assets/start-dep.png" alt="Your image title" width="70%" height="70%"/>
 
     <br />
 
