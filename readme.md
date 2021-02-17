@@ -39,25 +39,25 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 # Deploying on Heroku (as on Feb-2021)
 - Create an account on [Heroku](https://www.heroku.com/)
 - Click on "New" -> "Create new App"
-![image]('assets/new-app.png')
+![image](assets/new-app.png)
 - When you click on "Create App", you'll be greeted with this section : 
-![image]('assets/first-deploy.png')
+![image](assets/first-deploy.png)
 - Jump to "Settings" where you'll scroll down to see "Config Vars" & "Buildpacks":
-![image]('assets/buildpack.png')
+![image](assets/buildpack.png)
 - Add "Python Buildpack" and the below mentioned buildpack : 
      ```sh
     https://github.com/heroku/heroku-buildpack-apt
     ```
-    ![image]('assets/python-bp.png')
-    ![image]('assets/custom-bp.png')
-    ![image]('asstes/final-bp.png')
+    ![image](assets/python-bp.png)
+    ![image](assets/custom-bp.png)
+    ![image](asstes/final-bp.png)
 - After adding both buildpacks, click on "Reveal Config Vars" :
     ![image]('assets/config-vars.png')
 - Add the below mentioned "Key = Value" Pair : 
      ```sh
     TESSDATA_PREFIX = ./.apt/usr/share/tesseract-ocr/4.00/tessdata
     ```
-    ![image]('assets/fin-config-vars.png')
+    ![image](assets/fin-config-vars.png)
 - After adding both Buildpacks and Config variables,  we're now ready to deploy.
 - Follow the Steps given in "Deploy" section of your Heroku app.
 - ### But,  First we have to change the Heroku stack to "heroku-18"
@@ -72,12 +72,12 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
              ```
             heroku git:remote -a "Your-app-name"
              ```
-        ![image]('assets/first-two-cmd.png')             
+        ![image](assets/first-two-cmd.png)             
     - Before the "git add ." command, use this command to change the stack to "heroku-18"
          ```sh
          heroku stack:set heroku-18
         ```
-        ![image]('assets/stack-18.png')
+        ![image](assets/stack-18.png)
     - Then you can proceed with the commands : 
              ```
             git add .
@@ -89,9 +89,8 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
             git push heroku master
             ```
             
-    ![image]('assets/start-dep.png')
-    ![image]('assets/done-dep.png')
-    ![image]('heroku-18')
+    ![image](assets/start-dep.png)
+    ![image](assets/done-dep.png)
     
 - It'll take time to push the bot to heroku. Be patient.
 - After the build has succeeded, you can go and start your bot by going into "resources" tab and turning the "bot.py" worker ON.
