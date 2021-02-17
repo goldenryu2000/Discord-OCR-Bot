@@ -114,7 +114,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
          heroku stack:set heroku-18
         ```
 
-         <img src="assets/stack-18.png" alt="Your image title" width="70%" height="70%"/>
+    <img src="assets/stack-18.png" alt="Your image title" width="70%" height="70%"/>
         <br />
 
     - Then you can proceed with the commands : 
