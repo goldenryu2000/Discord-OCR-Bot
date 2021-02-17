@@ -63,7 +63,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 
     ![image](assets/custom-bp.png) 
 
-    ![image](asstes/final-bp.png)
+    ![image](assets/final-bp.png)
 
     <br />
 
@@ -90,24 +90,19 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     - Changing it to "heroku-18" made it work for me.
 
     - Type in the first three commands in your bot directory (assuming you have [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed) : 
-    <br />
 
-           ```sh
-            heroku login
-             ```
+    ```sh
+    heroku login
+    ```
+    
+    ```sh
+    git init
+    ```
 
-             <br />
+    ```sh
+    heroku git:remote -a "Your-app-name"
+    ```
 
-             ```sh
-            git init
-             ```
-
-             <br />
-
-             ```sh
-            heroku git:remote -a "Your-app-name"
-             ```
-             <br />
 
     ![image](assets/first-two-cmd.png) 
 
@@ -147,7 +142,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 - After the build has succeeded, you can go and start your bot by going into "resources" tab and turning the "bot.py" worker ON.
 
     - Click on the edit icon and turn the bot ON.
-    
+
     ![image](assets/bot-on.png)
 
 - That's it, your bot is now live. (If you didn't forget to add your "BOT_TOKEN" in the bot.py file.)
