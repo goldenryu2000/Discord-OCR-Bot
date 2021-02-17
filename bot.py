@@ -48,4 +48,5 @@ async def on_message(message):
         pass
     await bot.process_commands(message)
     
-bot.run('ODA1NTA3MTEwMzYzMjAxNTQ3.YBb49A.qeG4ltCg0pg0YfX2jsjvJt-NP3Q')
+#insert yout BOT TOKEN here
+bot.run('BOT_TOKEN')
