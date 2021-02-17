@@ -9,34 +9,37 @@ from io import BytesIO
 import requests
 
 
-def process_image(url):
-    img = _get_image(url)
+def get_string(img_path):
+    img = cv2.imread(img_path)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    filter = np.array([[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]])
-    img=cv2.filter2D(img,-1,filter)
     kernel = np.ones((1, 1), np.uint8)
     img = cv2.dilate(img, kernel, iterations=1)
     img = cv2.erode(img, kernel, iterations=1)
+    cv2.imwrite("removed_noise.png", img)
+    cv2.imwrite(img_path, img)
     pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
-    return pytesseract.image_to_string(img)
-
-def _get_image(url):
-    return np.asarray(Image.open(BytesIO(requests.get(url).content)))
-
+    result = pytesseract.image_to_string(Image.open(img_path))
+    return result
+    
 bot = commands.Bot(command_prefix='.', description="This is an OCR-Butt")
+
 # Events
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Streaming(name="Butts", url="https://www.youtube.com/watch?v=sy9ztJuZu2c"))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Butts"))
     print("Lessa GO!! It's Butt Time!!!!")
 
 @bot.event
 async def on_message(message):
     try:
         url = message.attachments[0].url
+        r = requests.get(url)
+        filename = "img.png"
+        with open(filename, 'wb') as out_file:
+            out_file.write(r.content)
         print(url)
         context = await bot.get_context(message)
-        ocr = process_image(url)
+        ocr = get_string("img.png")
         try:
             await context.send(ocr)
         except:
@@ -45,5 +48,4 @@ async def on_message(message):
         pass
     await bot.process_commands(message)
     
-# Enter your BOT_TOKEN Here
-bot.run('BOT_TOKEN')
+bot.run('ODA1NTA3MTEwMzYzMjAxNTQ3.YBb49A.qeG4ltCg0pg0YfX2jsjvJt-NP3Q')
