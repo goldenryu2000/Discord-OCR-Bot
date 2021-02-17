@@ -51,9 +51,10 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
     https://github.com/heroku/heroku-buildpack-apt
     ```
     <br />
-    ![image](assets/python-bp.png) <br />
-    ![image](assets/custom-bp.png) <br />
-    ![image](asstes/final-bp.png) <br />
+    ![image](assets/python-bp.png)
+    ![image](assets/custom-bp.png) 
+    ![image](asstes/final-bp.png)
+    <br />
 - After adding both buildpacks, click on "Reveal Config Vars" : <br />
     ![image](assets/config-vars.png)
 - Add the below mentioned "Key = Value" Pair : 
@@ -67,21 +68,27 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 - ### But,  First we have to change the Heroku stack to "heroku-18"
     - Changing it to "heroku-18" made it work for me.
     - Type in the first three commands in your bot directory (assuming you have [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed) : 
+    <br />
            ```
             heroku login
              ```
+             <br />
              ```
             git init
              ```
+             <br />
              ```
             heroku git:remote -a "Your-app-name"
              ```
-        ![image](assets/first-two-cmd.png)             
+             <br />
+        ![image](assets/first-two-cmd.png)  
+        <br />           
     - Before the "git add ." command, use this command to change the stack to "heroku-18"
          ```sh
          heroku stack:set heroku-18
         ```
         ![image](assets/stack-18.png)
+        <br />
     - Then you can proceed with the commands : 
              ```
             git add .
@@ -94,6 +101,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
             ```
             
     ![image](assets/start-dep.png)
+    <br />
     ![image](assets/done-dep.png)
     
 - It'll take time to push the bot to heroku. Be patient.
