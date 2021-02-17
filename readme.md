@@ -39,7 +39,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 # Deploying on Heroku (as on Feb-2021)
 - Create an account on [Heroku](https://www.heroku.com/)
 - Click on "New" -> "Create new App"
-![image]('assets/new-app.png')
+![image]("assets\new-app.png")
 - When you click on "Create App", you'll be greeted with this section : 
 ![image]('assets/first-deploy.png')
 - Jump to "Settings" where you'll scroll down to see "Config Vars" & "Buildpacks":
