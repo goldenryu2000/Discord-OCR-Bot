@@ -42,7 +42,7 @@ As a personal preference, this bot requires no command to do OCR. So add it to a
 - Create an account on [Heroku](https://www.heroku.com/)
 - Click on "New" -> "Create new App" <br />
 
-![image](assets/new-app.png) { width: 200px; }
+![image](assets/new-app.png){ width: 200px; }
 
 - When you click on "Create App", you'll be greeted with this section : <br />
 
